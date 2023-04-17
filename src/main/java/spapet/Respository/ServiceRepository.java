@@ -1,7 +1,7 @@
 package spapet.Respository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import spapet.Model.Service;
+import spapet.Model.Spaservice;
 
-public interface ServiceRepository extends JpaRepository<Service, Long> {
+public interface ServiceRepository extends JpaRepository<Spaservice, Long> {
 }

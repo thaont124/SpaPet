@@ -6,6 +6,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
 
+import javax.validation.constraints.NotNull;
+
 @Entity
 @Data
 public class Category {
@@ -14,6 +16,6 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-
+    @NotNull(message = "Name is required")
     private String name;
 }
