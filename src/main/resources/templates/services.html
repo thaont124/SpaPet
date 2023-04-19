@@ -3,326 +3,341 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Natuspa - Beauty Salon & Spa Template</title>
-    <link rel="stylesheet" href="./resource/css/style.css">
-    <link rel="stylesheet" href="./resource/css/queries.css">
-    <link rel="stylesheet" href="./resource/css/animation.css">
-    <link rel="stylesheet" href="./vendor/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./vendor/fonts/fontawesome-5.0.13/css/all.css">
-    <link rel="stylesheet" href="./vendor/fonts/natuspa-font/css/natuspa-icons.css">
-    <link rel="stylesheet" href="./vendor/js/slick/slick.css">
-    <link rel="stylesheet" href="./vendor/js/slick/slick-theme.css">
+    <link href="./resource/css/style.css" rel="stylesheet">
+    <link href="./resource/css/queries.css" rel="stylesheet">
+    <link href="./resource/css/animation.css" rel="stylesheet">
+    <link href="./vendor/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./vendor/fonts/fontawesome-5.0.13/css/all.css" rel="stylesheet">
+    <link href="./vendor/fonts/natuspa-font/css/natuspa-icons.css" rel="stylesheet">
+    <link href="./vendor/js/slick/slick.css" rel="stylesheet">
+    <link href="./vendor/js/slick/slick-theme.css" rel="stylesheet">
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
-    <link rel="stylesheet" href="./vendor/js/datetimepicker-master/jquery.datetimepicker.css">
-    <link rel="stylesheet" href="./vendor/js/Magnific-Popup-master/magnific-popup.css">
+    <link href="./vendor/js/datetimepicker-master/jquery.datetimepicker.css" rel="stylesheet">
+    <link href="./vendor/js/Magnific-Popup-master/magnific-popup.css" rel="stylesheet">
     <!-- favicons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-/+hMbnNhXbgcGpjyBpL6bJfdyV1xWWxMLUaZ1d6b3U6q9X6vyItLE7g51tv6GM1HnyVLRweRbZgDfhW0M8dzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/resource/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/resource/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/resource/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/resource/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/resource/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/resource/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/resource/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-/+hMbnNhXbgcGpjyBpL6bJfdyV1xWWxMLUaZ1d6b3U6q9X6vyItLE7g51tv6GM1HnyVLRweRbZgDfhW0M8dzQ=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
+    <link href="/resource/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="/resource/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="/resource/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="/resource/favicons/site.webmanifest" rel="manifest">
+    <link color="#5bbad5" href="/resource/favicons/safari-pinned-tab.svg" rel="mask-icon">
+    <link href="/resource/favicons/favicon.ico" rel="shortcut icon">
+    <meta content="#da532c" name="msapplication-TileColor">
+    <meta content="/resource/favicons/browserconfig.xml" name="msapplication-config">
+    <meta content="#ffffff" name="theme-color">
 </head>
 
 <body class="preload">
 
-    <!-- Loading ......... -->
-    <div class="loader" id="loader">
-        <div class="loader-inner">
-            <img src="./imgs/loader.svg" alt="Loader" class="loader-img">
-        </div>
+<!-- Loading ......... -->
+<div class="loader" id="loader">
+    <div class="loader-inner">
+        <img alt="Loader" class="loader-img" src="./imgs/loader.svg">
     </div>
+</div>
 
-    <!-- overlay for focus -->
-    <div id="overlay" style="display: none;"></div>
+<!-- overlay for focus -->
+<div id="overlay" style="display: none;"></div>
 
-    <!-- scroll top -->
-    <a class="scroll-top link-text" href="#home">Top</a>
+<!-- scroll top -->
+<a class="scroll-top link-text" href="#home">Top</a>
 
-    <!-- page wrapper -->
-    <div class="page-wrapper">
-        <!-- Header -->
-        <header id="home" class="other-pages">
-            <!-- Navigation -->
-            <nav class="navbar navbar-expand-xl navbar-dark">
-                <!-- logo site -->
-                <a class="navbar-brand main-logo" href="index.html" rel="home" title="Natuspa">
-                    <img src="./imgs/logo_white.png" alt="Natuspa Logo" width="193" height="76">
-                </a>
-                <!--  main nav -->
-                <button class="navbar-toggler mobile-nav-icon" type="button" data-toggle="collapse"
-                    data-target="#main-nav-mobile">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse main-nav">
-                    <ul class="navbar-nav menu" id="mainNav">
-                        <li class="nav-item menu-item">
-                            <a class="nav-link" href="index.html">Trang chủ</a>
-                        </li>
-                        <li class="nav-item menu-item">
-                            <a class="nav-link" href="services.html">Dịch vụ</a>
-                        </li>
-                        <li class="nav-item menu-item">
-                            <a class="nav-link" href="contact-us.html">Liên hệ</a>
-                        </li>
-                        <li class="nav-item menu-item">
-                            <a class="nav-link" href="contact-us.html">Đăng nhập</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- nav icon -->
-                <div class="main-nav-icon">
-                    <!-- shopping bag -->
-                    <a class="bag-button">
+<!-- page wrapper -->
+<div class="page-wrapper">
+    <!-- Header -->
+    <header class="other-pages" id="home">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-xl navbar-dark">
+            <!-- logo site -->
+            <a class="navbar-brand main-logo" href="index.html" rel="home" title="Natuspa">
+                <img alt="Natuspa Logo" height="76" src="./imgs/logo_white.png" width="193">
+            </a>
+            <!--  main nav -->
+            <button class="navbar-toggler mobile-nav-icon" data-target="#main-nav-mobile" data-toggle="collapse"
+                    type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse main-nav">
+                <ul class="navbar-nav menu" id="mainNav">
+                    <li class="nav-item menu-item">
+                        <a class="nav-link" href="index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link" href="spaServices.html">Dịch vụ</a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link" href="contact-us.html">Liên hệ</a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link" href="contact-us.html">Đăng nhập</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- nav icon -->
+            <div class="main-nav-icon">
+                <!-- shopping bag -->
+                <a class="bag-button">
                         <span class="bag-icon nav-icon">
                             <i class="far fa-calendar"><span class="badge badge-danger">2</span></i>
                         </span>
-                    </a>
-                    <!-- search icon -->
-                    <a id="search-icon" href="#">
+                </a>
+                <!-- search icon -->
+                <a href="#" id="search-icon">
                         <span class="bag-icon nav-icon">
                             <i class="fas fa-search"></i>
                         </span>
-                    </a>
-                    <div class="search-form">
-                        <span class="close-search"><i class="fal fa-times-circle"></i></span>
-                        <form class="search-input" action="#">
-                            <input type="text" name="search" id="searchForm" placeholder="Type and hit enter...">
-                        </form>
-                    </div>
+                </a>
+                <div class="search-form">
+                    <span class="close-search"><i class="fal fa-times-circle"></i></span>
+                    <form action="#" class="search-input">
+                        <input id="searchForm" name="search" placeholder="Type and hit enter..." type="text">
+                    </form>
                 </div>
-            </nav>
-            <!-- title pages -->
-            <h1 class="page-title">Services</h1>
-            
-        </header>
+            </div>
+        </nav>
+        <!-- title pages -->
+        <h1 class="page-title">Services</h1>
 
-        <!-- pricing plan -->
-        <div class="pricing-plan container">
-            <div class="spacer-clearfix" style="height: 80px;"></div>
+    </header>
+
+    <!-- pricing plan -->
+    <div class="pricing-plan container">
+        <div class="spacer-clearfix" style="height: 80px;"></div>
+        <div class="row">
+            <div class="heading col-12">
+                <div class="main-heading section-title">Service List</div>
+                <div class="sub-heading">
+                    <p>Chào mừng đến với Pet Friend
+                    </p>
+                </div>
+            </div>
+            <div class="spacer-clearfix" style="height: 40px;"></div>
+            <ul class="pricing-menu col-12">
+                <li class="pricing-item all facial massage">
+                    <span class="logo"><i class="fas fa-bath"></i></span>
+                    <div class="heading">
+                        <h4>Tắm</h4>
+                        <div class="description">Đảm bảo các em quyến rũ khi trao trả lại chủ nhân</div>
+                    </div>
+                </li>
+                <li class="pricing-item all massage treatments">
+                    <span class=" logo"><i class="fas fa-cut"></i></span>
+                    <div class="heading">
+                        <h4>Cắt tỉa</h4>
+                        <div class="description">Đảm bảo các em quyến rũ khi trao trả lại chủ nhân</div>
+                    </div>
+                </li>
+                <li class="pricing-item all nail treatments waxing">
+                    <span class="logo"><i class="natuspa-icon-polish"></i></span>
+                    <div class="heading">
+                        <h4>Mài móng</h4>
+                        <div class="description">Đảm bảo các em quyến rũ khi trao trả lại chủ nhân</div>
+                    </div>
+                </li>
+                <li class="pricing-item all treatments massage">
+                    <span class="logo"><i class="fas fa-paint-brush"></i></span>
+                    <div class="heading">
+                        <h4>Nhuộm lông</h4>
+                        <div class="description">Đảm bảo các em quyến rũ khi trao trả lại chủ nhân</div>
+                    </div>
+                </li>
+                <li class="pricing-item all facial waxing nail">
+                    <span class="logo"><i class="fas fa-paw"></i></span>
+                    <div class="heading">
+                        <h4>Massage</h4>
+                        <div class="description">Đảm bảo các em quyến rũ khi trao trả lại chủ nhân</div>
+                    </div>
+                </li>
+                <li class="pricing-item all facial massage">
+                    <span class="logo"><i class="fas fa-football-ball"></i></span>
+                    <div class="heading">
+                        <h4>Khách sạn thú cưng</h4>
+                        <div class="description">Giúp chủ nhân an tâm khi không có thời gian chăm sóc</div>
+                    </div>
+                </li>
+
+            </ul>
+            <span id="filter-option"></span>
+        </div>
+        <form>
+            <a href="serviceList.jsp">Xem thêm</a>
+        </form>
+        <div class="spacer-clearfix" style="height: 60px;"></div>
+    </div>
+
+    <!-- day spa packages -->
+    <div class="spa-packages container-fluid">
+        <div class="spacer-clearfix" style="height: 70px;"></div>
+        <div class="container">
             <div class="row">
                 <div class="heading col-12">
-                    <div class="main-heading section-title">Service List</div>
+                    <h2 class="main-heading section-title">Day Spa Packages</h2>
                     <div class="sub-heading">
-                        <p>Chào mừng đến với Pet Friend
+                        <p>
+                            Chào mừng bạn đến với Pet Friend<br>
+                            VỚI NHỮNG ƯU ĐÃI ĐẶC BIỆT
                         </p>
                     </div>
                 </div>
-                <div class="spacer-clearfix" style="height: 40px;"></div>
-                <ul class="pricing-menu col-12">
-                    <li class="pricing-item all facial massage">
-                        <span class="logo"><i class="fas fa-bath"></i></span>
-                        <div class="heading">
-                            <h4>Tắm</h4>
-                            <div class="description">Đảm bảo các em quyến rũ khi trao trả lại chủ nhân</div>
-                        </div>
-                    </li>
-                    <li class="pricing-item all massage treatments">
-                        <span class=" logo"><i class="fas fa-cut"></i></span>
-                        <div class="heading">
-                            <h4>Cắt tỉa</h4>
-                            <div class="description">Đảm bảo các em quyến rũ khi trao trả lại chủ nhân</div>
-                        </div>
-                    </li>
-                    <li class="pricing-item all nail treatments waxing">
-                        <span class="logo"><i class="natuspa-icon-polish"></i></span>
-                        <div class="heading">
-                            <h4>Mài móng</h4>
-                            <div class="description">Đảm bảo các em quyến rũ khi trao trả lại chủ nhân</div>
-                        </div>
-                    </li>
-                    <li class="pricing-item all treatments massage">
-                        <span class="logo"><i class="fas fa-paint-brush"></i></span>
-                        <div class="heading">
-                            <h4>Nhuộm lông</h4>
-                            <div class="description">Đảm bảo các em quyến rũ khi trao trả lại chủ nhân</div>
-                        </div>
-                    </li>
-                    <li class="pricing-item all facial waxing nail">
-                        <span class="logo"><i class="fas fa-paw"></i></span>
-                        <div class="heading">
-                            <h4>Massage</h4>
-                            <div class="description">Đảm bảo các em quyến rũ khi trao trả lại chủ nhân</div>
-                        </div>
-                    </li>
-                    <li class="pricing-item all facial massage">
-                        <span class="logo"><i class="fas fa-football-ball"></i></span>
-                        <div class="heading">
-                            <h4>Khách sạn thú cưng</h4>
-                            <div class="description">Giúp chủ nhân an tâm khi không có thời gian chăm sóc</div>
-                        </div>
-                    </li>
-                    
-                </ul>
-                <span id="filter-option"></span>
-            </div>
-            <div class="spacer-clearfix" style="height: 60px;"></div>
-        </div>
-
-        <!-- day spa packages -->
-        <div class="spa-packages container-fluid">
-            <div class="spacer-clearfix" style="height: 70px;"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="heading col-12">
-                        <h2 class="main-heading section-title">Day Spa Packages</h2>
-                        <div class="sub-heading">
-                            <p>
-                                Chào mừng bạn đến với Pet Friend<br>
-                                VỚI NHỮNG ƯU ĐÃI ĐẶC BIỆT
-                            </p>
-                        </div>
-                    </div>
-                    <div class="package-box col-lg-4 col-md-6 col-sm-12">
-                        <h2 class="section-title name-price-package">Gói Đơn Giản<br><span class="price">$369</span>
-                        </h2>
-                        <ul class="features">
-                            <li class="feature-item">Cắt tỉa lông</li>
-                            <li class="feature-item">Tắm rửa</li>
-                            <li class="feature-item"><del>Massage</del></li>
-                            <li class="feature-item"><del>Nhuộm lông</del></li>
-                            <li class="feature-item"><del>Kèm thức ăn và đồ chơi</del></li>
-                        </ul>
-                        <a class="link-text text-linear-effect purchase-btn">đặt lịch</a>
-                    </div>
-                    <div class="package-box center col-lg-4 col-md-6 col-sm-12">
-                        <h2 class="section-title name-price-package">Gói đôi<br><span class="price">$595</span>
-                        </h2>
-                        <ul class="features">
-                            <li class="feature-item">Cắt tỉa lông</li>
-                            <li class="feature-item">Tắm rửa</li>
-                            <li class="feature-item">Massage</li>
-                            <li class="feature-item"><del>Nhuộm lông</del></li>
-                            <li class="feature-item"><del>Kèm thức ăn và đồ chơi</del></li>
-                        </ul>
-                        <a class="link-text text-linear-effect purchase-btn">đặt lịch</a>
-                    </div>
-                    <div class="package-box col-lg-4 col-md-6 col-sm-12">
-                        <h2 class="section-title name-price-package">Gói đặc biệt<br><span class="price">$769</span>
-                        </h2>
-                        <ul class="features">
-                            <li class="feature-item">Cắt tỉa lông</li>
-                            <li class="feature-item">Tắm rửa</li>
-                            <li class="feature-item">Massage</li>
-                            <li class="feature-item">Nhuộm lông</li>
-                            <li class="feature-item">Kèm thức ăn và đồ chơi</li>
-                        </ul>
-                        <a class="link-text text-linear-effect purchase-btn">đặt lịch </a>
-                    </div>
+                <div class="package-box col-lg-4 col-md-6 col-sm-12">
+                    <h2 class="section-title name-price-package">Gói Đơn Giản<br><span class="price">$369</span>
+                    </h2>
+                    <ul class="features">
+                        <li class="feature-item">Cắt tỉa lông</li>
+                        <li class="feature-item">Tắm rửa</li>
+                        <li class="feature-item">
+                            <del>Massage</del>
+                        </li>
+                        <li class="feature-item">
+                            <del>Nhuộm lông</del>
+                        </li>
+                        <li class="feature-item">
+                            <del>Kèm thức ăn và đồ chơi</del>
+                        </li>
+                    </ul>
+                    <a class="link-text text-linear-effect purchase-btn">đặt lịch</a>
+                </div>
+                <div class="package-box center col-lg-4 col-md-6 col-sm-12">
+                    <h2 class="section-title name-price-package">Gói đôi<br><span class="price">$595</span>
+                    </h2>
+                    <ul class="features">
+                        <li class="feature-item">Cắt tỉa lông</li>
+                        <li class="feature-item">Tắm rửa</li>
+                        <li class="feature-item">Massage</li>
+                        <li class="feature-item">
+                            <del>Nhuộm lông</del>
+                        </li>
+                        <li class="feature-item">
+                            <del>Kèm thức ăn và đồ chơi</del>
+                        </li>
+                    </ul>
+                    <a class="link-text text-linear-effect purchase-btn">đặt lịch</a>
+                </div>
+                <div class="package-box col-lg-4 col-md-6 col-sm-12">
+                    <h2 class="section-title name-price-package">Gói đặc biệt<br><span class="price">$769</span>
+                    </h2>
+                    <ul class="features">
+                        <li class="feature-item">Cắt tỉa lông</li>
+                        <li class="feature-item">Tắm rửa</li>
+                        <li class="feature-item">Massage</li>
+                        <li class="feature-item">Nhuộm lông</li>
+                        <li class="feature-item">Kèm thức ăn và đồ chơi</li>
+                    </ul>
+                    <a class="link-text text-linear-effect purchase-btn">đặt lịch </a>
                 </div>
             </div>
-            <div class="spacer-clearfix" style="height: 80px;"></div>
+        </div>
+        <div class="spacer-clearfix" style="height: 80px;"></div>
+    </div>
+</div>
+
+<!-- footer -->
+<footer id="footer">
+    <div class="footer-content">
+        <a href="index.html"><img alt="footer-logo" src="./imgs/footer-logo-white.png"></a>
+        <div class="sub-heading">Design by @CBR-Themes</div>
+        <div class="slogan">Pro inimicus sapientem an, ad cibo velit.</div>
+        <ul class="footer-social">
+            <li class="social-media" style="background-color: #4b64a6;">
+                <a class="social-popup-icon" href="https://fb.com/Tuannguyentn2504" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li class="social-media" style="background-color: #0cace4;">
+                <a class="social-popup-icon" href="#" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="social-media" style="background-color: #f12756;">
+                <a class="social-popup-icon" href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer-bottom">Copyright © 2019. Natuspa. All Rights Reserved.</div>
+</footer>
+
+<!-- modal dialog box popup -->
+<div class="modal-dialog-box" style="display: none;">
+    <div class="inner">
+        <div class="dialog-img"><img alt="Dialog Img" src="./imgs/popup-img.jpg" style="height: 410px;"></div>
+        <span class="close-icon"><i class="fal fa-times"></i></span>
+        <div class="content">
+            <h5 class="pre-heading">Get Our Most</h5>
+            <h3 class="heading">Exclusive Offers</h3>
+            <p class="sub-heading">Get up to 60% Extra Off Your First Deal Use code WELCOME at checkout for 20%
+                Extra
+                Off Local & Getaways, or 10% Extra Off Goods.
+            </p>
+            <form action="#">
+                <input placeholder="Your E-mail" type="text">
+                <button class="btn book-now-btn">Subcriber</button>
+            </form>
         </div>
     </div>
+</div>
 
-    <!-- footer -->
-    <footer id="footer">
-        <div class="footer-content">
-            <a href="index.html"><img src="./imgs/footer-logo-white.png" alt="footer-logo"></a>
-            <div class="sub-heading">Design by @CBR-Themes</div>
-            <div class="slogan">Pro inimicus sapientem an, ad cibo velit.</div>
-            <ul class="footer-social">
-                <li class="social-media" style="background-color: #4b64a6;">
-                    <a class="social-popup-icon" target="_blank" href="https://fb.com/Tuannguyentn2504">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li class="social-media" style="background-color: #0cace4;">
-                    <a class="social-popup-icon" target="_blank" href="#">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="social-media" style="background-color: #f12756;">
-                    <a class="social-popup-icon" target="_blank" href="#">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-bottom">Copyright © 2019. Natuspa. All Rights Reserved.</div>
-    </footer>
+<script src="./vendor/js/jquery-v3.4.1.min.js"></script>
+<script src="./vendor/js/bootstrap.min.js"></script>
+<script src="./vendor/js/jquery.waypoints.min.js"></script>
+<!-- <script src="https://kit.fontawesome.com/7534282567.js" crossorigin="anonymous"></script> -->
+<script src="./vendor/js/slick/slick.min.js"></script>
+<!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+<script src="./vendor/js/datetimepicker-master/build/jquery.datetimepicker.full.js"></script>
+<script src="./vendor/js/Magnific-Popup-master/jquery.magnific-popup.min.js"></script>
+<script src="./resource/js/script.js"></script>
+<script>
+    // ================= Way point - nav sticky and scroll-top ================
+    $('.maps').waypoint(function (dicrection) {
+        if (dicrection === 'down') {
+            $('nav').addClass('nav-sticky');
+            $('.scroll-top').css({
+                'visibility': 'visible',
+                'opacity': '1'
+            });
+        } else {
+            $('nav').removeClass('nav-sticky');
+            $('.scroll-top').css({
+                'visibility': 'hidden',
+                'opacity': '0'
+            });
+        }
+    }, {
+        offset: '0px'
+    });
+</script>
+<script>
+    // Lấy biểu tượng tìm kiếm và khung tìm kiếm
+    const searchIcon = document.getElementById("search-icon");
+    const searchForm = document.querySelector(".search-form");
 
-    <!-- modal dialog box popup -->
-    <div class="modal-dialog-box" style="display: none;">
-        <div class="inner">
-            <div class="dialog-img"><img src="./imgs/popup-img.jpg" alt="Dialog Img" style="height: 410px;"></div>
-            <span class="close-icon"><i class="fal fa-times"></i></span>
-            <div class="content">
-                <h5 class="pre-heading">Get Our Most</h5>
-                <h3 class="heading">Exclusive Offers</h3>
-                <p class="sub-heading">Get up to 60% Extra Off Your First Deal Use code WELCOME at checkout for 20%
-                    Extra
-                    Off Local & Getaways, or 10% Extra Off Goods.
-                </p>
-                <form action="#">
-                    <input type="text" placeholder="Your E-mail">
-                    <button class="btn book-now-btn">Subcriber</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <script src="./vendor/js/jquery-v3.4.1.min.js"></script>
-    <script src="./vendor/js/bootstrap.min.js"></script>
-    <script src="./vendor/js/jquery.waypoints.min.js"></script>
-    <!-- <script src="https://kit.fontawesome.com/7534282567.js" crossorigin="anonymous"></script> -->
-    <script src="./vendor/js/slick/slick.min.js"></script>
-    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
-    <script src="./vendor/js/datetimepicker-master/build/jquery.datetimepicker.full.js"></script>
-    <script src="./vendor/js/Magnific-Popup-master/jquery.magnific-popup.min.js"></script>
-    <script src="./resource/js/script.js"></script>
-    <script>
-        // ================= Way point - nav sticky and scroll-top ================
-        $('.maps').waypoint(function (dicrection) {
-            if (dicrection === 'down') {
-                $('nav').addClass('nav-sticky');
-                $('.scroll-top').css({
-                    'visibility': 'visible',
-                    'opacity': '1'
-                });
-            } else {
-                $('nav').removeClass('nav-sticky');
-                $('.scroll-top').css({
-                    'visibility': 'hidden',
-                    'opacity': '0'
-                });
-            }
-        }, {
-            offset: '0px'
-        });
-    </script>
-    <script>
-        // Lấy biểu tượng tìm kiếm và khung tìm kiếm
-        const searchIcon = document.getElementById("search-icon");
-        const searchForm = document.querySelector(".search-form");
-
-        // Thêm sự kiện click vào biểu tượng tìm kiếm
-        searchIcon.addEventListener("click", function () {
-            // Nếu khung tìm kiếm đang ẩn thì hiển thị khung tìm kiếm
-            if (searchForm.style.visibility === "hidden") {
-                searchForm.style.opacity = 1;
-                searchForm.style.visibility = "visible";
-            }
-            // Ngược lại, ẩn khung tìm kiếm
-            else {
-                searchForm.style.opacity = 0;
-                searchForm.style.visibility = "hidden";
-            }
-        });
-
-        // Thêm sự kiện click vào nút đóng khung tìm kiếm
-        document.querySelector(".close-search").addEventListener("click", function () {
+    // Thêm sự kiện click vào biểu tượng tìm kiếm
+    searchIcon.addEventListener("click", function () {
+        // Nếu khung tìm kiếm đang ẩn thì hiển thị khung tìm kiếm
+        if (searchForm.style.visibility === "hidden") {
+            searchForm.style.opacity = 1;
+            searchForm.style.visibility = "visible";
+        }
+        // Ngược lại, ẩn khung tìm kiếm
+        else {
             searchForm.style.opacity = 0;
             searchForm.style.visibility = "hidden";
-        });
+        }
+    });
 
-    </script>
+    // Thêm sự kiện click vào nút đóng khung tìm kiếm
+    document.querySelector(".close-search").addEventListener("click", function () {
+        searchForm.style.opacity = 0;
+        searchForm.style.visibility = "hidden";
+    });
+
+</script>
 </body>
 
 </html>

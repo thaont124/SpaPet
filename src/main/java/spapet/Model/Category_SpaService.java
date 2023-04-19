@@ -8,7 +8,7 @@ import java.io.Serializable;
 @Entity
 @Table(name = "Category_Service")
 @Data
-public class Category_Spaservice implements Serializable {
+public class Category_SpaService implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,7 +16,7 @@ public class Category_Spaservice implements Serializable {
 
     @ManyToOne
     @JoinColumn(name = "service_id")
-    private Spaservice spaService;
+    private SpaService service;
 
     @ManyToOne
     @JoinColumn(name = "category_id")

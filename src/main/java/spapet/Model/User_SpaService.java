@@ -9,7 +9,7 @@ import lombok.Data;
 @Entity
 @Data
 @Table(name = "User_Service")
-public class User_Spaservice implements Serializable {
+public class User_SpaService implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,7 +25,7 @@ public class User_Spaservice implements Serializable {
 
     @ManyToOne
     @JoinColumn(name = "service_id")
-    private Spaservice spaservice;
+    private SpaService service;
 
     private LocalDateTime bookingTime;
 }

@@ -17,11 +17,11 @@ public class User_Message implements Serializable {
 //
 //    private long messageId;
 
-    @OneToOne
-    @JoinColumn(name = "user_id")
+    @ManyToOne
+    @JoinColumn(name = "userId")
     private User user;
 
-    @ManyToOne
-    @JoinColumn(name = "message_id")
+    @OneToOne
+    @JoinColumn(name = "messageId")
     private Message message;
 }
