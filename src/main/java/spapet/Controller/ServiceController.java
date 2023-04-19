@@ -13,7 +13,7 @@ import javax.management.relation.RelationNotFoundException;
 import java.util.List;
 
 @RestController
-@RequestMapping(path = "/serviceList", produces = "application/json")
+@RequestMapping(path = "/Api/serviceList", produces = "application/json")
 public class ServiceController {
     @Autowired
     private ServiceService serviceService;
