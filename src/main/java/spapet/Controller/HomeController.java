@@ -12,4 +12,12 @@ public class HomeController {
     public String index(){
         return "index";
     }
+    @GetMapping("/services")
+    public String services(){
+        return "services";
+    }
+    @GetMapping("/serviceList")
+    public String serviceList(){
+        return "serviceList";
+    }
 }
