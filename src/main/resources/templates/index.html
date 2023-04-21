@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Natuspa - Beauty Salon & Spa Template</title>
+    <title>Pet Friend</title>
     <link rel="stylesheet" href="./resource/css/style.css">
     <link rel="stylesheet" href="./resource/css/queries.css">
     <link rel="stylesheet" href="./resource/css/animation.css">
@@ -53,7 +53,7 @@
             <!-- Navigation -->
             <nav class="navbar navbar-expand-xl navbar-dark">
                 <!-- logo site -->
-                <a class="navbar-brand main-logo" href="index.html" rel="home" title="Natuspa">
+                <a class="navbar-brand main-logo" href="index.html" rel="home" title="Pet Friend">
                     <img src="./imgs/logo_white.png" alt="Natuspa Logo" width="193" height="76">
                 </a>
                 <!--  main nav -->
@@ -356,33 +356,8 @@
     <script src="./vendor/js/Magnific-Popup-master/jquery.magnific-popup.min.js"></script>
 
     <script src="./resource/js/script.js"></script>
-    <script>
-        // Lấy biểu tượng tìm kiếm và khung tìm kiếm
-        const searchIcon = document.getElementById("search-icon");
-        const searchForm = document.querySelector(".search-form");
-
-        // Thêm sự kiện click vào biểu tượng tìm kiếm
-        searchIcon.addEventListener("click", function () {
-            // Nếu khung tìm kiếm đang ẩn thì hiển thị khung tìm kiếm
-            if (searchForm.style.visibility === "hidden") {
-                searchForm.style.opacity = 1;
-                searchForm.style.visibility = "visible";
-            }
-            // Ngược lại, ẩn khung tìm kiếm
-            else {
-                searchForm.style.opacity = 0;
-                searchForm.style.visibility = "hidden";
-            }
-        });
-
-        // Thêm sự kiện click vào nút đóng khung tìm kiếm
-        document.querySelector(".close-search").addEventListener("click", function () {
-            searchForm.style.opacity = 0;
-            searchForm.style.visibility = "hidden";
-        });
-
-    </script>
-
+    <script src="./resource/js/nav-sticky.js"></script>
+    <script src="./resource/js/search.js"></script>
 </body>
 
 </html>

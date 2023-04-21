@@ -48,7 +48,7 @@
             <!-- Navigation -->
             <nav class="navbar navbar-expand-xl navbar-dark">
                 <!-- logo site -->
-                <a class="navbar-brand main-logo" href="index.html" rel="home" title="Natuspa">
+                <a class="navbar-brand main-logo" href="index.html" rel="home" title="Pet Friend">
                     <img src="./imgs/logo_white.png" alt="Natuspa Logo" width="193" height="76">
                 </a>
                 <!--  main nav -->
@@ -77,7 +77,7 @@
                     <!-- shopping bag -->
                     <a class="bag-button">
                         <span class="bag-icon nav-icon">
-                            <i class="far fa-calendar"><span class="badge badge-danger">2</span></i>
+                            <i class="far fa-calendar"><span class="badge badge-danger"></span></i>
                         </span>
                     </a>
                     <!-- search icon -->
@@ -149,7 +149,7 @@
             <div class="slogan">Pro inimicus sapientem an, ad cibo velit.</div>
             <ul class="footer-social">
                 <li class="social-media" style="background-color: #4b64a6;">
-                    <a class="social-popup-icon" target="_blank" href="https://fb.com/Tuannguyentn2504">
+                    <a class="social-popup-icon" target="_blank" href="#">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </li>
@@ -178,52 +178,8 @@
     <script src="./vendor/js/datetimepicker-master/build/jquery.datetimepicker.full.js"></script>
     <script src="./vendor/js/Magnific-Popup-master/jquery.magnific-popup.min.js"></script>
     <script src="./resource/js/script.js"></script>
-    <script>
-        // ================= Way point - nav sticky and scroll-top ================
-        $('.maps').waypoint(function (dicrection) {
-            if (dicrection === 'down') {
-                $('nav').addClass('nav-sticky');
-                $('.scroll-top').css({
-                    'visibility': 'visible',
-                    'opacity': '1'
-                });
-            } else {
-                $('nav').removeClass('nav-sticky');
-                $('.scroll-top').css({
-                    'visibility': 'hidden',
-                    'opacity': '0'
-                });
-            }
-        }, {
-            offset: '0px'
-        });
-    </script>
-    <script>
-        // Lấy biểu tượng tìm kiếm và khung tìm kiếm
-        const searchIcon = document.getElementById("search-icon");
-        const searchForm = document.querySelector(".search-form");
-
-        // Thêm sự kiện click vào biểu tượng tìm kiếm
-        searchIcon.addEventListener("click", function () {
-            // Nếu khung tìm kiếm đang ẩn thì hiển thị khung tìm kiếm
-            if (searchForm.style.visibility === "hidden") {
-                searchForm.style.opacity = 1;
-                searchForm.style.visibility = "visible";
-            }
-            // Ngược lại, ẩn khung tìm kiếm
-            else {
-                searchForm.style.opacity = 0;
-                searchForm.style.visibility = "hidden";
-            }
-        });
-
-        // Thêm sự kiện click vào nút đóng khung tìm kiếm
-        document.querySelector(".close-search").addEventListener("click", function () {
-            searchForm.style.opacity = 0;
-            searchForm.style.visibility = "hidden";
-        });
-
-    </script>
+    <script src="./resource/js/nav-sticky.js"></script>
+    <script src="./resource/js/search.js"></script>
 </body>
 
 </html>
