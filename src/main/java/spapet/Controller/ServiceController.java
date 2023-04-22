@@ -27,18 +27,18 @@ public class ServiceController {
         return serviceService.getById(id);
     }
 
-    @PostMapping("/add")
-    public ResponseEntity<SpaService> addService(@RequestBody SpaServiceDTO serviceDTO){
+    @PostMapping("/create")
+    public ResponseEntity<SpaService> createService(@RequestBody SpaServiceDTO serviceDTO){
         SpaService newService = serviceService.addService(serviceDTO);
         return new ResponseEntity<>(newService, HttpStatus.CREATED);
     }
 
-    @DeleteMapping("delete")
-    public ResponseEntity<?> deleteService(@PathVariable Long id){
-        serviceService.deleteServiceById(id);
-        return new ResponseEntity<>("Đã xóa thành công dịch vụ", HttpStatus.CREATED);
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<?> deleteService(@RequestBody SpaServiceDTO serviceDTO){
+        serviceService.deleteService(serviceDTO);
+        return new ResponseEntity<>("Đã xóa thành công dịch vụ", HttpStatus.OK);
     }
-    @PutMapping("/{id}")
+    @PutMapping("/update/{id}")
     public ResponseEntity<?> updateService(@PathVariable Long id, @RequestBody SpaServiceDTO serviceDTO) {
         serviceService.updateService(id, serviceDTO);
         return new ResponseEntity<>("Cập nhật dịch vụ thành công", HttpStatus.OK);

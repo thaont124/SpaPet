@@ -4,4 +4,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import spapet.Model.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
+    public User findByUserName(String userName);
 }

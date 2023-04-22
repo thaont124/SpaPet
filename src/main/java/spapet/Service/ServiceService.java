@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 import spapet.DTO.SpaServiceDTO;
 import spapet.Model.SpaService;
 import spapet.Respository.SpaServiceRepository;
@@ -66,8 +67,8 @@ public class ServiceService {
     }
 
 
-    public void deleteServiceById(long id) {
-        serviceRepo.deleteById(id);
+    public void deleteService(SpaServiceDTO serviceDTO) {
+        serviceRepo.deleteById(serviceDTO.getId());
     }
 
     public void updateService(long id, SpaServiceDTO serviceDTO) {
